@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+*:focus-visible {
+  outline: 0;
+}
+img {
+  max-width: 100%;
+}
+body{
+  font-family: "Tetris", Verdana, sans-serif;
+}
+@font-face{
+  font-family: 'Tetris';
+  src: local("Tetris"),
+  url('fonts/Tetris.woff') format("woff");
+  font-style: normal;
+  font-display: swap;
+}
+h1,h2, h3,h4,h5,p,li{
+  margin: 0;
+  padding: 0;
+}
+.list-reset{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.btn-reset{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+#score{
+  display: inline-block;
+}
+.main-title{
+  text-align: center;
+  font-size: 40px;
+}
+.conteiner
+{
+  max-width: 1800px;
+  margin: 0 auto ;
+  display: none;
+}
+.visible-main{
+  display: block  !important;
+}
+.main-btn{
+  position: fixed;
+  font-family: 'Tetris';
+  top: 40%;
+  right: 38%;
+  font-size: 50px;
+  border: 5px solid black;
+  background-color: rgb(0, 47, 216);
+  padding: 10px 30px;
+}
+.diss{
+  display: none;
+}
+.wrapper{
+  text-align: center;
+}
+canvas{
+  border: 5px solid black ;
+  margin: 0 auto;
+}
+.score-div{
+  font-size: 30px;
+  text-align: center;
+}
+.pause-btn, .restart-btn{
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Tetris';
+  border: 5px solid rgb(63, 3, 242);
+}
+.restart-btn{
+  color: white;
+  margin: 0 auto;
+  min-width: 200px;
+  margin-bottom: 20px;
+  border: 5px solid rgb(255, 255, 255);
+}
+.menu-div
+{
+  padding: 20px 30px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  opacity: 0;
+  position: fixed;
+  top: 10%;
+  right: 40%;
+  background-color: rgb(0, 4, 135);
+  width: 300px;
+  height: 500px;
+  z-index: -1;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+.visible{
+  opacity: 1 !important;
+  z-index: 1000;
+}
+.second-title{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: auto;
+}
+.clue{
+  font-family: 'Tetris' !important;
+  font-size: 20px;
+  margin-top: 15px;
+}
+.button-wrapper{
+  margin-bottom: 10px;
+}
+.over{
+  display: none;
+  right: 38%;
+}
+.over-span{
+  display: block;
+  font-size: 15px;
+}

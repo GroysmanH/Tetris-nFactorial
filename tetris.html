@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="conteiner">
+    <div class="wrapper">
+    <h1 class="main-title">Tetris</h1>
+    <div>
+
+      <canvas id="tetris" width="250" height="500"></canvas>
+    </div>
+    <div class="score-div">
+      Score : <div id="score">0</div>
+    </div>
+    <div class="button-wrapper">
+      <button class="btn-reset pause-btn" id="pause">Pause</button>
+      <button class="btn-reset pause-btn menu">Menu</button>
+    </div>
+    <span>Created by Khaidar Nurdaulet</span>
+    <div class="menu-div">
+      <h2 class="second-title">Main Menu</h2>
+      Best Score : <div id="bestScore">0</div>
+      Last Score : <div id="lastScore">0</div>
+      <span class="clue">&#8593; - вращать <br> &#8595; - мягкое падение <br> право &#8596; лево</span>
+      <div class="menu-wrapper">
+        <button class="btn-reset restart-btn" id="restartButton">Restart</button>
+        <button class="btn-reset restart-btn close">Close menu</button>
+      </div>
+    </div>
+
+<audio id="myAudio">
+  <source src="ezio-family.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+function playAudio() {
+  document.getElementById("myAudio").play();
+}
+</script>
+  </div>
+  </div>
+  <button class = "main-btn btn-reset" id="main-btn" onclick="playAudio()">Start GAME</button>
+  <button class = "main-btn btn-reset over">Game Over  <span class="over-span">Click restart in menu</span></button>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="tiles.js"></script>
+  <script src="tetris.js"></script>
+</body>
+</html>
